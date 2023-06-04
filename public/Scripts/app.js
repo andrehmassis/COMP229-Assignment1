@@ -1,6 +1,10 @@
-(function () {
-    function Start(){
-        console.log("App Started")
+// IIFE
+
+(function(){
+    function Start()
+    {
+        console.log("App Started...")
     }
+
     window.addEventListener("load", Start);
 })();
