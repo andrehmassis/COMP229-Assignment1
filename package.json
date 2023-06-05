@@ -19,7 +19,6 @@
   },
   "description": "Assignment1",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrehmassis/COMP229-Assignment1.git"

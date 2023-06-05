@@ -1,51 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
-  <link rel='stylesheet' href='/Content/app.css' />
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Andre Assis - 301282773 - COMP229</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+<%- include ('partials/header.ejs') %>
+
+<%- include ('partials/main_nav.ejs') %>
+
+<!-- Main Content -->
+<main class="container">
+  <div class="jumbotron">
+    <h1><strong>Hello. Welcome to my <%= title %> page.</strong></h1>
+  </div>
+  <div class="aboutrow">
+    <div class="aboutcolumn1">
+      <div>
+        <img src="/Assests/Images/andreassis.jpg" width="180px" height="250px" alt="">
       </div>
     </div>
-  </nav>
+    <div class="aboutcolumn2">
+      <h2><strong>I'm Andre and this is my Portifolio</strong></h2><br>
+      <p><strong>Mission Statement</strong></p>
+      <p> "Create, develop and evolve always seeking excellence to deliver my best every day".</p>
+    </div>
+  </div>
+  <div class="aboutmehomepage">
+    <a href="/about"><button type="button" class="button button1">Click here to know more about me</button></a>
+  </div>
+</main>
 
-  <h1>Hello World!. Welcome to the <%= title %> page.</h1>
 
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/Scripts/app.js"></script>
-</body>
-</html>
+
+<%- include ('partials/bottom_nav.ejs') %>
+
+<%- include ('partials/footer.ejs') %>
+
+
